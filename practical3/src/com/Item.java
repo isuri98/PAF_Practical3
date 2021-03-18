@@ -93,11 +93,11 @@ try
  
  output += "<td>" + itemDesc + "</td>";
  // buttons
- output += "<td><input name=‘btnUpdate’ " + " type=‘button’ value=‘Update’></td>"+ "<td><form method=‘post’ action=‘item.jsp’>"+ "<input name=‘btnRemove’ "
- + " type=‘submit’ class='btn btn-danger' value=‘Remove’>"
- + "<input name=‘itemID’ type=‘hidden’ "
- + " value=‘" + itemID + "‘>" + "</form></td></tr>";
- }
+ output += "<td><input name='btnUpdate' type='button'class='btn btn-primary' value='Update'></td>"
+		 + "<td><form method='post' action='items.jsp'>" 
+		 + "<input name='btnRemove' type='submit'class='btn btn-danger' value='Remove'>" 
+		 + "<input name='itemID' type='hidden' value='" + itemID + "'>" + 
+		"</form></td></tr>";}
  con.close();
  // Complete the html table
  output += "</table>";
